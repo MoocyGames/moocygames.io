@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #262626;
+    background-image: linear-gradient(to right, #333 1px, transparent 1px), linear-gradient(to bottom, #333 1px, transparent 1px);
+    background-size: 4vh 4vh;
+    overflow-y: scroll; 
+}
+
+header h1 {
+    color: #01fe87;
+    width: 100%;
+    font-size: 3.3em; 
+    text-align: center; 
+    filter: drop-shadow(0 0 10px #01fe87) drop-shadow(0 0 30px #01fe87); 
+}
+
+.box {
+    padding: 30px; 
+    max-width: 90%; 
+    margin: auto; 
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 2.2em; 
+    font-weight: 800;
+    margin-bottom: 30px; 
+    text-align: left; 
+}
+
+h3 {
+    color: #e8747488;
+    font-size: 1.6em; 
+    font-weight: 700;
+    text-align: left; 
+}
+
+p {
+    color: #ffffff;
+    font-size: 1.2em; 
+    text-align: left; 
+}
+
+.text span {
+    color: #666;
+    font-size: 1.5em;
+    display: inline-block;
+    position: relative;
+    transition: opacity 0.5s ease; 
+}
+
+.text span.active {
+    color: #0f0;
+    opacity: 1; 
+}
+
+li span {
+    position: relative;
+    display: inline-block;
+    transition: opacity 0.5s ease; 
+    color: #ffffff;
+}
+
+li span.active {
+    color: #0f0;
+    opacity: 1; 
+}
+
+@media only screen and (min-width: 768px) {
+    header h1 {
+        font-size: 4em; 
+    }
+    .box {
+        padding: 50px;
+        max-width: 800px;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 1.8em; 
+    }
+    p {
+        font-size: 1.4em; 
+    }
+}

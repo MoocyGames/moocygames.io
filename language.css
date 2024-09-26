@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #262626;
+    background-image: linear-gradient(to right, #333 1px, transparent 1px), linear-gradient(to bottom, #333 1px, transparent 1px);
+    background-size: 4vh 4vh;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Butonlar arasındaki boşluğu artırdım */
+    animation: slide-in 0.5s ease; /* İlk yüklenme animasyonu */
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 25px 50px; /* Buton boyutunu artırdım */
+    background-color: #a8dadc; /* Pastel mavi */
+    color: #1d3557; /* Koyu mavi yazı rengi */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Daha hafif gölge */
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 22px; /* Yazı boyutunu artırdım */
+    flex: 1 1 calc(33.33% - 20px); /* 3'lü dizilim için ayarlama */
+    max-width: 300px; /* Butonların maksimum genişliğini ayarladım */
+}
+
+.button:hover {
+    background-color: #ffb703; /* Pastel sarı */
+    transform: translateX(10px); /* Sağ kaydırma */
+}
